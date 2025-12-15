@@ -68,18 +68,42 @@ export default function LinksPage() {
                     ))}
                 </section>
 
-                <section className="mt-8 space-y-3">
-                    <iframe data-testid="embed-iframe" className="
-                        group relative flex w-full items-center gap-3 rounded-2xl
-                        border border-white/10 bg-white/5 px-4 py-4
-                        shadow-sm backdrop-blur
-                        transition
-                        hover:bg-white/10 hover:border-white/20
-                        active:scale-[0.99]
-                        focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-                        src="https://open.spotify.com/embed/track/0XjSEm9gtnTcRnj5WHSopP?utm_source=generator"
-                        width="100%" height="352" frameBorder="0"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <section className="mt-8 space-y-4">
+                    {/* Spotify */}
+                    <div className="
+                          rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur
+                          transition hover:bg-white/10 hover:border-white/20
+                          focus-within:ring-2 focus-within:ring-white/60
+                          overflow-hidden">
+                        <iframe
+                            title="Spotify embed - Superstition"
+                            data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/0XjSEm9gtnTcRnj5WHSopP?utm_source=generator"
+                            className="block w-full"
+                            height={352}
+                            frameBorder={0}
+                            loading="lazy"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        />
+                    </div>
+
+                    {/* Apple Music */}
+                    <div className="
+                      rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur
+                      transition hover:bg-white/10 hover:border-white/20
+                      focus-within:ring-2 focus-within:ring-white/60
+                      overflow-hidden">
+                        <iframe
+                            title="Apple Music embed - Superstition"
+                            src="https://embed.music.apple.com/za/song/superstition/1829925478"
+                            className="block w-full"
+                            height={175}
+                            frameBorder={0}
+                            loading="lazy"
+                            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                        />
+                    </div>
                 </section>
 
                 <footer className="mt-10 text-center text-xs text-white/50">
