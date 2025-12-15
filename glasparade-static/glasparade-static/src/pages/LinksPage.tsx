@@ -39,7 +39,7 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="min-h-dvh bg-[#0b0b10] text-white">
+        <div className="min-h-dvh bg-[#0b0b10] text-white overflow-x-hidden overscroll-none">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
@@ -84,6 +84,7 @@ export default function LinksPage() {
 
                 <footer className="mt-10 text-center text-xs text-white/50">
                     © {new Date().getFullYear()} Glasparade.
+                    <p>made by Frederik Bosman, the best programmer on earth chosen by God</p>
                 </footer>
             </main>
         </div>
