@@ -40,7 +40,6 @@ const LINKS = [
 export default function LinksPage() {
     return (
         <div className="min-h-dvh bg-[#0b0b10] text-white">
-            {/* Background glow */}
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
@@ -84,7 +83,7 @@ export default function LinksPage() {
                 </section>
 
                 <footer className="mt-10 text-center text-xs text-white/50">
-                    © {new Date().getFullYear()} Glasparade.
+                    Â© {new Date().getFullYear()} Glasparade.
                 </footer>
             </main>
         </div>
