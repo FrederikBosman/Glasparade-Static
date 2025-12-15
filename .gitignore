@@ -39,6 +39,7 @@ logs/
 /rts2_cache_cjs/
 
 # Editor settings and workspace files
+.vs/
 .vscode/
 .idea/
 *.sublime-workspace
