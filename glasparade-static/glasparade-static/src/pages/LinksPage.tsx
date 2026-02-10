@@ -1,6 +1,6 @@
 ﻿import { LinkCard } from "../components/LinkCard";
 import { ProfileHeader } from "../components/ProfileHeader";
-import { IconSpotify, IconYouTube, IconAppleMusic, IconInstagram } from "../components/Icons";
+import { IconSpotify, IconYouTube, IconAppleMusic, IconInstagram, IconTikTok } from "../components/Icons";
 
 const LINKS = [
     {
@@ -8,6 +8,12 @@ const LINKS = [
         subtitle: "@glasparadeband",
         href: "https://instagram.com/glasparadeband",
         icon: <IconInstagram className="h-6 w-6" />,
+    },
+    {
+        title: "TikTok",
+        subtitle: "@glasparade",
+        href: "https://tiktok.com/@glasparade",
+        icon: <IconTikTok className="h-6 w-6" />,
     },
     {
         title: "Listen to superstition!",
@@ -39,7 +45,7 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="min-h-screen overflow-x-hidden overscroll-none bg-[#e5e4df] text-black">
+        <div className="min-h-dvh overflow-x-hidden overscroll-none bg-[#e5e4df] text-black">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"

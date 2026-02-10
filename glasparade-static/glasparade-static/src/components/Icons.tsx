@@ -19,6 +19,15 @@ export function IconInstagram(props: React.SVGProps<SVGSVGElement>) {
         />
     );
 }
+export function IconTikTok(props: React.SVGProps<SVGSVGElement>) {
+    return (
+        <img
+            src="/tik-tok.png"
+            alt="TikTok"
+            className="h-7 w-7"
+        />
+    );
+}
 export function IconYouTube(props: SVGProps<SVGSVGElement>) {
     return (
         <img
