@@ -45,7 +45,7 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="pt-[env(safe-area-inset-top)] min-h-screen overflow-x-hidden overscroll-none bg-[#e5e4df] text-black">
+        <div className="pt-[env(safe-area-inset-top)] min-h-dvh overflow-x-hidden overscroll-none bg-[#e5e4df] text-black">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
