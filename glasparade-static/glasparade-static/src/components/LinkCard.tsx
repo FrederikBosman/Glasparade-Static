@@ -26,7 +26,7 @@ export function LinkCard({ title, href, subtitle, icon, badge }: LinkCardProps) 
                 <div
                     className="
             flex h-11 w-11 shrink-0 items-center justify-center rounded-xl
-            bg-white/10 text-white
+            bg-white/10 text-black
           "
                     aria-hidden="true"
                 >
@@ -36,25 +36,25 @@ export function LinkCard({ title, href, subtitle, icon, badge }: LinkCardProps) 
 
             <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
-                    <span className="truncate text-base font-semibold text-white">
+                    <span className="truncate text-base font-semibold text-black">
                         {title}
                     </span>
                     {badge ? (
-                        <span className="shrink-0 rounded-full bg-white/15 px-2 py-0.5 text-xs font-medium text-white/90">
+                        <span className="shrink-0 rounded-full bg-white/15 px-2 py-0.5 text-xs font-medium text-black/90">
                             {badge}
                         </span>
                     ) : null}
                 </div>
 
                 {subtitle ? (
-                    <p className="mt-0.5 line-clamp-2 text-sm text-white/70">
+                    <p className="mt-0.5 line-clamp-2 text-sm text-black/70">
                         {subtitle}
                     </p>
                 ) : null}
             </div>
 
             <svg
-                className="h-5 w-5 shrink-0 text-white/50 transition group-hover:translate-x-0.5 group-hover:text-white/70"
+                className="h-5 w-5 shrink-0 text-black/50 transition group-hover:translate-x-0.5 group-hover:text-black/70"
                 viewBox="0 0 24 24"
                 fill="none"
                 aria-hidden="true"

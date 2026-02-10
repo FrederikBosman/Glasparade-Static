@@ -18,12 +18,12 @@ export function ProfileHeader({ name, bio, avatarUrl }: ProfileHeaderProps) {
                 ) : null}
             </div>
 
-            <h1 className="mt-4 text-xl font-bold tracking-tight text-white">
+            <h1 className="mt-4 text-xl font-bold tracking-tight text-black">
                 {name}
             </h1>
 
             {bio ? (
-                <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-white/70">
+                <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-black/70">
                     {bio}
                 </p>
             ) : null}

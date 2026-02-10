@@ -39,20 +39,20 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="min-h-dvh bg-[#0b0b10] text-white overflow-x-hidden overscroll-none">
+        <div className="min-h-dvh bg-white text-black overflow-x-hidden overscroll-none">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
             >
-                <div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-3xl" />
-                <div className="absolute top-56 left-1/4 h-72 w-72 rounded-full bg-cyan-400/15 blur-3xl" />
+                <div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-500/20 blur-3xl" />
+                <div className="absolute top-56 left-1/4 h-72 w-72 rounded-full bg-green-400/15 blur-3xl" />
             </div>
 
             <main className="relative mx-auto w-full max-w-md px-4 pb-10 pt-10">
                 <ProfileHeader
                     name="Glasparade"
                     bio="te veel gevoelens, te min volume-knop"
-                    avatarUrl="thumbnail.jpg"
+                    avatarUrl="thumbnail2.jpg"
                 />
 
                 <section className="mt-8 space-y-3">
@@ -106,9 +106,8 @@ export default function LinksPage() {
                     </div>
                 </section>
 
-                <footer className="mt-10 text-center text-xs text-white/50">
+                <footer className="mt-10 text-center text-xs text-black/50">
                     © {new Date().getFullYear()} Glasparade.
-                    <p>made by Frederik Bosman, the best programmer on earth chosen by God</p>
                 </footer>
             </main>
         </div>
