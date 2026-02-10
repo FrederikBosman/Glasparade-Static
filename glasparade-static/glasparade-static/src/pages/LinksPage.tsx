@@ -1,4 +1,4 @@
-import { LinkCard } from "../components/LinkCard";
+﻿import { LinkCard } from "../components/LinkCard";
 import { ProfileHeader } from "../components/ProfileHeader";
 import { IconSpotify, IconYouTube, IconAppleMusic, IconInstagram } from "../components/Icons";
 
@@ -39,20 +39,20 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="min-h-dvh bg-white text-black overflow-x-hidden overscroll-none">
+        <div className="min-h-dvh overflow-x-hidden overscroll-none bg-[#e5e4df] text-black">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
             >
-                <div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-500/20 blur-3xl" />
-                <div className="absolute top-56 left-1/4 h-72 w-72 rounded-full bg-green-400/15 blur-3xl" />
+                <div className="-translate-x-1/2 bg-[#0bd5e3]/20 absolute -top-24 left-1/2 h-72 w-72 rounded-full blur-3xl" />
+                <div className="bg-[#4526ce]/15 absolute left-1/4 top-56 h-72 w-72 rounded-full blur-3xl" />
             </div>
 
             <main className="relative mx-auto w-full max-w-md px-4 pb-10 pt-10">
                 <ProfileHeader
                     name="Glasparade"
                     bio="te veel gevoelens, te min volume-knop"
-                    avatarUrl="thumbnail2.jpg"
+                    avatarUrl="thumbnail3.jpg"
                 />
 
                 <section className="mt-8 space-y-3">
@@ -71,10 +71,10 @@ export default function LinksPage() {
                 <section className="mt-8 space-y-4">
                     {/* Spotify */}
                     <div className="
-                          rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur
-                          transition hover:bg-white/10 hover:border-white/20
-                          focus-within:ring-2 focus-within:ring-white/60
-                          overflow-hidden">
+                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          shadow-sm backdrop-blur transition focus-within:ring-2
+                          focus-within:ring-white/60 hover:border-white/20
+                          hover:bg-white/10">
                         <iframe
                             title="Spotify embed - Superstition"
                             data-testid="embed-iframe"
@@ -89,10 +89,10 @@ export default function LinksPage() {
 
                     {/* Apple Music */}
                     <div className="
-                      rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur
-                      transition hover:bg-white/10 hover:border-white/20
-                      focus-within:ring-2 focus-within:ring-white/60
-                      overflow-hidden">
+                      overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                      shadow-sm backdrop-blur transition focus-within:ring-2
+                      focus-within:ring-white/60 hover:border-white/20
+                      hover:bg-white/10">
                         <iframe
                             title="Apple Music embed - Superstition"
                             src="https://embed.music.apple.com/za/song/superstition/1829925478"

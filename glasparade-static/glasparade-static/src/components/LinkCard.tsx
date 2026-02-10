@@ -1,4 +1,4 @@
-export type LinkCardProps = {
+﻿export type LinkCardProps = {
     title: string;
     href: string;
     subtitle?: string;
@@ -17,17 +17,15 @@ export function LinkCard({ title, href, subtitle, icon, badge }: LinkCardProps) 
         border border-white/10 bg-white/5 px-4 py-4
         shadow-sm backdrop-blur
         transition
-        hover:bg-white/10 hover:border-white/20
-        active:scale-[0.99]
-        focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60
-      "
+        hover:border-white/20 hover:bg-white/10
+        focus:outline-none
+        focus-visible:ring-2 focus-visible:ring-white/60 active:scale-[0.99]"
         >
             {icon ? (
                 <div
                     className="
             flex h-11 w-11 shrink-0 items-center justify-center rounded-xl
-            bg-white/10 text-black
-          "
+            bg-white/10 text-black"
                     aria-hidden="true"
                 >
                     {icon}
