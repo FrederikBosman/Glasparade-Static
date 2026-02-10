@@ -50,7 +50,7 @@ export default function LinksPage() {
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
             >
-                <div className="-translate-x-1/2 bg-[#0bd5e3]/20 absolute -top-24 left-1/2 h-72 w-72 rounded-full blur-3xl" />
+                <div className="-translate-x-1/2 bg-[#0bd5e3]/20 absolute -top-1 left-1/2 h-72 w-72 rounded-full blur-3xl" />
                 <div className="bg-[#4526ce]/15 absolute left-1/4 top-56 h-72 w-72 rounded-full blur-3xl" />
             </div>
 
