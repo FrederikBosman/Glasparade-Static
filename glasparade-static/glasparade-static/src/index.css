@@ -4,6 +4,6 @@
     html,
     body,
     #root {
-        @apply m-0 min-h-dvh bg-transparent;
+        @apply m-0 min-h-dvh bg-[#e5e4df];
     }
 }
