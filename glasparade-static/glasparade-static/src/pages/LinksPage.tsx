@@ -16,23 +16,23 @@ const LINKS = [
         icon: <IconTikTok className="h-6 w-6" />,
     },
     {
-        title: "Listen to superstition!",
-        subtitle: "Superstition by Glasparade on spotify",
-        href: "https://open.spotify.com/track/0XjSEm9gtnTcRnj5WHSopP?si=602b1b1dba1f4c86",
+        title: "Listen to Muishond!",
+        subtitle: "Muishond by Glasparade on spotify",
+        href: "https://open.spotify.com/track/5fYXxM6Z2Z1vHD30WCHp9g?si=8253c3ad86ab45af",
         icon: <IconSpotify className="h-6 w-6" />,
         badge: "New",
     },
     {
-        title: "Listen to superstition!",
-        subtitle: "Superstition by Glasparade on Apple Music",
-        href: "https://music.apple.com/za/song/superstition/1829925478",
+        title: "Listen to Muishond!",
+        subtitle: "Muishond by Glasparade on Apple Music",
+        href: "https://music.apple.com/za/album/muishond/1879917499?i=1879917516",
         icon: <IconAppleMusic className="h-6 w-6" />,
         badge: "New",
     },
     {
-        title: "Listen to superstition!",
-        subtitle: "Superstition by Glasparade on YouTube Music",
-        href: "https://youtu.be/6TQJzgV0a44?si=9wJKflZhbiF3kDql",
+        title: "Listen to Muishond!",
+        subtitle: "Muishond by Glasparade on YouTube Music",
+        href: "https://music.youtube.com/watch?v=HuYna5Bbr0M&si=GrPhVWTsX_a0_iMe",
         icon: <IconYouTube className="h-6 w-6" />,
         badge: "New",
     },
@@ -82,6 +82,22 @@ export default function LinksPage() {
                           focus-within:ring-white/60 hover:border-white/20
                           hover:bg-white/10">
                         <iframe
+                            title="Spotify embed - Muishond"
+                            data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/5fYXxM6Z2Z1vHD30WCHp9g?utm_source=generator&theme=0"
+                            className="block w-full"
+                            height={352}
+                            frameBorder={0}
+                            loading="lazy"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        />
+                    </div>
+                    <div className="
+                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          shadow-sm backdrop-blur transition focus-within:ring-2
+                          focus-within:ring-white/60 hover:border-white/20
+                          hover:bg-white/10">
+                        <iframe
                             title="Spotify embed - Superstition"
                             data-testid="embed-iframe"
                             src="https://open.spotify.com/embed/track/0XjSEm9gtnTcRnj5WHSopP?utm_source=generator"
@@ -90,24 +106,6 @@ export default function LinksPage() {
                             frameBorder={0}
                             loading="lazy"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        />
-                    </div>
-
-                    {/* Apple Music */}
-                    <div className="
-                      overflow-hidden rounded-2xl border border-white/10 bg-white/5
-                      shadow-sm backdrop-blur transition focus-within:ring-2
-                      focus-within:ring-white/60 hover:border-white/20
-                      hover:bg-white/10">
-                        <iframe
-                            title="Apple Music embed - Superstition"
-                            src="https://embed.music.apple.com/za/song/superstition/1829925478"
-                            className="block w-full"
-                            height={175}
-                            frameBorder={0}
-                            loading="lazy"
-                            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                         />
                     </div>
                 </section>
