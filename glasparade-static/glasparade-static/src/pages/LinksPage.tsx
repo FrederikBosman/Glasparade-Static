@@ -82,6 +82,23 @@ export default function LinksPage() {
                           focus-within:ring-white/60 hover:border-white/20
                           hover:bg-white/10">
                         <iframe
+                            title="Spotify embed - Absolusie"
+                            data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/1UkIY01iF1DJDfGti49X1y?utm_source=generator&si=f804a6b15bdd44d7"
+                            className="block w-full"
+                            height={352}
+                            frameBorder={0}
+                            allowFullScreen
+                            loading="lazy"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        />
+                    </div>
+                    <div className="
+                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          shadow-sm backdrop-blur transition focus-within:ring-2
+                          focus-within:ring-white/60 hover:border-white/20
+                          hover:bg-white/10">
+                        <iframe
                             title="Spotify embed - Muishond"
                             data-testid="embed-iframe"
                             src="https://open.spotify.com/embed/track/5fYXxM6Z2Z1vHD30WCHp9g?utm_source=generator&theme=0"
@@ -104,23 +121,6 @@ export default function LinksPage() {
                             className="block w-full"
                             height={352}
                             frameBorder={0}
-                            loading="lazy"
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        />
-                    </div>
-                    <div className="
-                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
-                          shadow-sm backdrop-blur transition focus-within:ring-2
-                          focus-within:ring-white/60 hover:border-white/20
-                          hover:bg-white/10">
-                        <iframe
-                            title="Spotify embed - Absolusie"
-                            data-testid="embed-iframe"
-                            src="https://open.spotify.com/embed/track/1UkIY01iF1DJDfGti49X1y?utm_source=generator&si=f804a6b15bdd44d7"
-                            className="block w-full"
-                            height={352}
-                            frameBorder={0}
-                            allowFullScreen
                             loading="lazy"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         />
