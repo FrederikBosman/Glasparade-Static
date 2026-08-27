@@ -16,23 +16,23 @@ const LINKS = [
         icon: <IconTikTok className="h-6 w-6" />,
     },
     {
-        title: "Listen to Muishond!",
-        subtitle: "Muishond by Glasparade on spotify",
-        href: "https://open.spotify.com/track/5fYXxM6Z2Z1vHD30WCHp9g?si=8253c3ad86ab45af",
+        title: "Listen to Absolusie!",
+        subtitle: "Absolusie by Glasparade on Spotify",
+        href: "https://open.spotify.com/track/1UkIY01iF1DJDfGti49X1y?utm_source=generator&si=f804a6b15bdd44d7",
         icon: <IconSpotify className="h-6 w-6" />,
         badge: "New",
     },
     {
-        title: "Listen to Muishond!",
-        subtitle: "Muishond by Glasparade on Apple Music",
-        href: "https://music.apple.com/za/album/muishond/1879917499?i=1879917516",
+        title: "Listen to Absolusie!",
+        subtitle: "Absolusie by Glasparade on Apple Music",
+        href: "https://music.apple.com/za/album/absolusie/6776329723?i=6776329725",
         icon: <IconAppleMusic className="h-6 w-6" />,
         badge: "New",
     },
     {
-        title: "Listen to Muishond!",
-        subtitle: "Muishond by Glasparade on YouTube Music",
-        href: "https://music.youtube.com/watch?v=HuYna5Bbr0M&si=GrPhVWTsX_a0_iMe",
+        title: "Listen to Absolusie!",
+        subtitle: "Absolusie by Glasparade on YouTube Music",
+        href: "https://music.youtube.com/watch?v=2fd9VocJkMo&si=B5uXEQmHUD_MGRNW",
         icon: <IconYouTube className="h-6 w-6" />,
         badge: "New",
     },
@@ -45,7 +45,7 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="pt-[env(safe-area-inset-top)] min-h-dvh overflow-x-hidden overscroll-none bg-[#e5e4df] text-black">
+        <div className="pt-[env(safe-area-inset-top)] h-screen max-h-screen h-dvh max-h-dvh overflow-x-hidden overflow-y-auto overscroll-none bg-[#e5e4df] text-black">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
@@ -104,6 +104,23 @@ export default function LinksPage() {
                             className="block w-full"
                             height={352}
                             frameBorder={0}
+                            loading="lazy"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        />
+                    </div>
+                    <div className="
+                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          shadow-sm backdrop-blur transition focus-within:ring-2
+                          focus-within:ring-white/60 hover:border-white/20
+                          hover:bg-white/10">
+                        <iframe
+                            title="Spotify embed - Absolusie"
+                            data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/1UkIY01iF1DJDfGti49X1y?utm_source=generator&si=f804a6b15bdd44d7"
+                            className="block w-full"
+                            height={352}
+                            frameBorder={0}
+                            allowFullScreen
                             loading="lazy"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         />
