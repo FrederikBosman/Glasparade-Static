@@ -1,6 +1,5 @@
 ﻿import { LinkCard } from "../components/LinkCard";
 import { ProfileHeader } from "../components/ProfileHeader";
-import { ThemeToggle } from "../components/ThemeToggle";
 import { IconSpotify, IconYouTube, IconAppleMusic, IconInstagram, IconTikTok } from "../components/Icons";
 
 const LINKS = [
@@ -56,7 +55,6 @@ export default function LinksPage() {
             </div>
 
             <main className="relative mx-auto w-full max-w-md px-4 pb-10 pt-10">
-                <ThemeToggle />
                 <ProfileHeader
                     name="Glasparade"
                     bio="te veel gevoelens, te min volume-knop"
