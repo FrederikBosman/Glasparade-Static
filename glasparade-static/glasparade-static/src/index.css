@@ -1,9 +1,41 @@
 ﻿@import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* light theme - derived from the app's original palette (#e5e4df bg, cyan/purple blobs) */
+    --color-base-100: #e5e4df;
+    --color-base-200: #dcdbd5;
+    --color-base-300: #cfcec7;
+    --color-base-content: #1a1a1a;
+    --color-primary: #4526ce;
+    --color-primary-content: #ffffff;
+    --color-secondary: #0bd5e3;
+    --color-secondary-content: #04282b;
+    --color-accent: #7c6ae8;
+    --color-accent-content: #ffffff;
+    --color-neutral: #ffffff;
+    --color-neutral-content: #1a1a1a;
+
+    /* dark theme */
+    --color-dbase-100: #16171a;
+    --color-dbase-200: #1e2024;
+    --color-dbase-300: #26282d;
+    --color-dbase-content: #e9e8e3;
+    --color-dprimary: #7c6ae8;
+    --color-dprimary-content: #16171a;
+    --color-dsecondary: #3fe0ec;
+    --color-dsecondary-content: #04282b;
+    --color-daccent: #8b7cf0;
+    --color-daccent-content: #16171a;
+    --color-dneutral: #ffffff;
+    --color-dneutral-content: #e9e8e3;
+}
+
 @layer base {
     html,
     body,
     #root {
-        @apply m-0 min-h-dvh bg-[#e5e4df];
+        @apply m-0 min-h-dvh bg-base-100 dark:bg-dbase-100;
     }
 }

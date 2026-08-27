@@ -1,5 +1,6 @@
 ﻿import { LinkCard } from "../components/LinkCard";
 import { ProfileHeader } from "../components/ProfileHeader";
+import { ThemeToggle } from "../components/ThemeToggle";
 import { IconSpotify, IconYouTube, IconAppleMusic, IconInstagram, IconTikTok } from "../components/Icons";
 
 const LINKS = [
@@ -45,16 +46,17 @@ const LINKS = [
 
 export default function LinksPage() {
     return (
-        <div className="pt-[env(safe-area-inset-top)] h-screen max-h-screen h-dvh max-h-dvh overflow-x-hidden overflow-y-auto overscroll-none bg-[#e5e4df] text-black">
+        <div className="pt-[env(safe-area-inset-top)] h-screen max-h-screen h-dvh max-h-dvh overflow-x-hidden overflow-y-auto overscroll-none bg-base-100 text-base-content dark:bg-dbase-100 dark:text-dbase-content">
             <div
                 aria-hidden="true"
                 className="pointer-events-none fixed inset-0 opacity-80"
             >
-                <div className="-translate-x-1/2 bg-[#0bd5e3]/20 absolute -top-1 left-1/2 h-72 w-72 rounded-full blur-3xl" />
-                <div className="bg-[#4526ce]/15 absolute left-1/4 top-56 h-72 w-72 rounded-full blur-3xl" />
+                <div className="-translate-x-1/2 bg-secondary/20 absolute -top-1 left-1/2 h-72 w-72 rounded-full blur-3xl dark:bg-dsecondary/20" />
+                <div className="bg-primary/15 absolute left-1/4 top-56 h-72 w-72 rounded-full blur-3xl dark:bg-dprimary/20" />
             </div>
 
             <main className="relative mx-auto w-full max-w-md px-4 pb-10 pt-10">
+                <ThemeToggle />
                 <ProfileHeader
                     name="Glasparade"
                     bio="te veel gevoelens, te min volume-knop"
@@ -77,10 +79,10 @@ export default function LinksPage() {
                 <section className="mt-8 space-y-4">
                     {/* Spotify */}
                     <div className="
-                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          overflow-hidden rounded-2xl border border-base-300 bg-neutral/5
                           shadow-sm backdrop-blur transition focus-within:ring-2
-                          focus-within:ring-white/60 hover:border-white/20
-                          hover:bg-white/10">
+                          focus-within:ring-primary/60 hover:border-base-300 hover:bg-neutral/10
+                          dark:border-dbase-300 dark:bg-dneutral/5 dark:focus-within:ring-dprimary/60 dark:hover:bg-dneutral/10">
                         <iframe
                             title="Spotify embed - Absolusie"
                             data-testid="embed-iframe"
@@ -94,10 +96,10 @@ export default function LinksPage() {
                         />
                     </div>
                     <div className="
-                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          overflow-hidden rounded-2xl border border-base-300 bg-neutral/5
                           shadow-sm backdrop-blur transition focus-within:ring-2
-                          focus-within:ring-white/60 hover:border-white/20
-                          hover:bg-white/10">
+                          focus-within:ring-primary/60 hover:border-base-300 hover:bg-neutral/10
+                          dark:border-dbase-300 dark:bg-dneutral/5 dark:focus-within:ring-dprimary/60 dark:hover:bg-dneutral/10">
                         <iframe
                             title="Spotify embed - Muishond"
                             data-testid="embed-iframe"
@@ -110,10 +112,10 @@ export default function LinksPage() {
                         />
                     </div>
                     <div className="
-                          overflow-hidden rounded-2xl border border-white/10 bg-white/5
+                          overflow-hidden rounded-2xl border border-base-300 bg-neutral/5
                           shadow-sm backdrop-blur transition focus-within:ring-2
-                          focus-within:ring-white/60 hover:border-white/20
-                          hover:bg-white/10">
+                          focus-within:ring-primary/60 hover:border-base-300 hover:bg-neutral/10
+                          dark:border-dbase-300 dark:bg-dneutral/5 dark:focus-within:ring-dprimary/60 dark:hover:bg-dneutral/10">
                         <iframe
                             title="Spotify embed - Superstition"
                             data-testid="embed-iframe"
@@ -127,7 +129,7 @@ export default function LinksPage() {
                     </div>
                 </section>
 
-                <footer className="mt-10 text-center text-xs text-black/50">
+                <footer className="mt-10 text-center text-xs text-base-content/50 dark:text-dbase-content/50">
                     © {new Date().getFullYear()} Glasparade.
                 </footer>
             </main>

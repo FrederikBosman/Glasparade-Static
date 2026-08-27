@@ -14,18 +14,19 @@ export function LinkCard({ title, href, subtitle, icon, badge }: LinkCardProps) 
             rel="noreferrer"
             className="
         group relative flex w-full items-center gap-3 rounded-2xl
-        border border-white/10 bg-white/5 px-4 py-4
+        border border-base-300 bg-neutral/5 px-4 py-4
         shadow-sm backdrop-blur
         transition
-        hover:border-white/20 hover:bg-white/10
+        hover:border-base-300 hover:bg-neutral/10
         focus:outline-none
-        focus-visible:ring-2 focus-visible:ring-white/60 active:scale-[0.99]"
+        focus-visible:ring-2 focus-visible:ring-primary/60 active:scale-[0.99]
+        dark:border-dbase-300 dark:bg-dneutral/5 dark:hover:bg-dneutral/10 dark:focus-visible:ring-dprimary/60"
         >
             {icon ? (
                 <div
                     className="
             flex h-11 w-11 shrink-0 items-center justify-center rounded-xl
-            bg-white/10 text-black"
+            bg-neutral/10 text-base-content dark:bg-dneutral/10 dark:text-dbase-content"
                     aria-hidden="true"
                 >
                     {icon}
@@ -34,25 +35,25 @@ export function LinkCard({ title, href, subtitle, icon, badge }: LinkCardProps) 
 
             <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
-                    <span className="truncate text-base font-semibold text-black">
+                    <span className="truncate text-base font-semibold text-base-content dark:text-dbase-content">
                         {title}
                     </span>
                     {badge ? (
-                        <span className="shrink-0 rounded-full bg-white/15 px-2 py-0.5 text-xs font-medium text-black/90">
+                        <span className="shrink-0 rounded-full bg-primary/15 px-2 py-0.5 text-xs font-medium text-primary dark:bg-dprimary/20 dark:text-dprimary">
                             {badge}
                         </span>
                     ) : null}
                 </div>
 
                 {subtitle ? (
-                    <p className="mt-0.5 line-clamp-2 text-sm text-black/70">
+                    <p className="mt-0.5 line-clamp-2 text-sm text-base-content/70 dark:text-dbase-content/70">
                         {subtitle}
                     </p>
                 ) : null}
             </div>
 
             <svg
-                className="h-5 w-5 shrink-0 text-black/50 transition group-hover:translate-x-0.5 group-hover:text-black/70"
+                className="h-5 w-5 shrink-0 text-base-content/50 transition group-hover:translate-x-0.5 group-hover:text-base-content/70 dark:text-dbase-content/50 dark:group-hover:text-dbase-content/70"
                 viewBox="0 0 24 24"
                 fill="none"
                 aria-hidden="true"
