@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/thumbnail2.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      (() => {
+        const storedTheme = window.localStorage.getItem('theme');
+        const shouldUseDark =
+          storedTheme === 'dark' ||
+          (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', shouldUseDark);
+      })();
+    </script>
     <title>Glasparade</title>
-    <script type="module" crossorigin src="/assets/index-CeZ-HyrO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-aONik79D.css">
+    <script type="module" crossorigin src="/assets/index-Ds61TR36.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CWSRgwEg.css">
   </head>
-  <body className ="bg-[#e5e4df]">
+  <body className="bg-base-100 dark:bg-dbase-100">
     <div id="root"></div>
   </body>
 </html>
